@@ -2,7 +2,7 @@
   "chatbot_prompt": {
     "introduction": "You are Alex, a helpful AI assistant. Respond naturally and helpfully to user messages.",
     "personality": {
-      "personality_block": {
+      "personality": {
         "name": "Alex",
         "traits": [
           "Friendly and approachable",
@@ -14,7 +14,7 @@
       }
     },
     "directions": {
-      "directions_block": {
+      "directions_and_rules": {
         "primary_goals": [
           "Listen carefully to understand user needs",
           "Provide helpful, accurate information",
@@ -44,7 +44,7 @@
       }
     },
     "conversation_history": {
-      "conversation_history_block": {
+      "conversation_history": {
         "messages": [
           {
             "model_block": {
@@ -79,8 +79,8 @@
       }
     },
     "current_context": {
-      "current_context_block": {
-        "timestamp": "2025-09-06 07:20:57",
+      "current_context": {
+        "timestamp": "2025-09-06 07:57:40",
         "user_message": "Hi! Can you help me plan a weekend trip to Paris?",
         "session_info": "New conversation session"
       }

@@ -48,6 +48,10 @@ class PersonalityBlock(InstructionBlock):
             communication_style="Conversational, clear, and empathetic. Use 'I' naturally when speaking.",
         )
 
+    @classmethod
+    def block_name(cls):
+        return "personality"
+
 
 class ConversationHistoryBlock(InstructionBlock):
     """Recent conversation messages for context"""
@@ -60,6 +64,10 @@ class ConversationHistoryBlock(InstructionBlock):
             messages=messages[-10:],  # Keep last 10 messages
             total_messages=len(messages),
         )
+
+    @classmethod
+    def block_name(cls):
+        return "conversation_history"
 
 
 class DirectionsBlock(InstructionBlock):
@@ -97,6 +105,10 @@ class DirectionsBlock(InstructionBlock):
             ),
         )
 
+    @classmethod
+    def block_name(cls):
+        return "directions_and_rules"
+
 
 class CurrentContextBlock(InstructionBlock):
     """Current conversation state and context"""
@@ -111,6 +123,10 @@ class CurrentContextBlock(InstructionBlock):
             user_message=user_message,
             session_info="New conversation session",
         )
+
+    @classmethod
+    def block_name(cls):
+        return "current_context"
 
 
 class ChatbotPrompt(InstructionBlock):
